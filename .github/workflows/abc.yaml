@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - develop
+      - secret
 jobs:
   build:
 
@@ -22,4 +22,4 @@ jobs:
         angular_dist_build_folder: dist/angular-aws-secrets # The folder where your project is supposed to be after running ng build by the action.
 
 permissions:
-  contents: write # Allow write permission to GITHUB_TOKEN to commit to deploy branch.
+  contents: write # Allow write permission to GITHUB_TOKEN to commit to deploy branch
